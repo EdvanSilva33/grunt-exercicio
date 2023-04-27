@@ -1,0 +1,98 @@
+@corPrincipal: #94da4b;
+@corFonte:#fff;
+@corBotao:#006efd;
+@corTextPrincipal:#0c181c;
+@cardColor:#416864;
+@modoDark:#000;
+@botao:#ef43ef;
+@styleFonte:'Roboto', sans-serif;
+@styleFonteText:'Bruno Ace', cursive;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+   
+    font-family: @styleFonte;
+        background-color: @corPrincipal;
+        color: @corTextPrincipal;
+        header{
+            margin-top: 10px;
+            text-align: center;
+            text-decoration:underline;
+            button{
+                margin-top: 20px;
+                width: 150px;
+                padding: 10px;
+                border-radius: 5px;
+                color:@corBotao;
+                cursor: pointer;
+                font-family: @styleFonteText;
+                font-weight: bold;
+            }
+        }
+        .container{
+            width: 100%;
+            max-width: 1024px;
+            margin: 35px auto;
+            
+        }
+        .card{
+            background-color:@cardColor ;
+            width: 100%;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 16px;
+            border-radius: 10px;
+            img{
+                width: 150px;
+                margin-bottom: 20px;
+            }
+            .nome{
+                
+                border: 2px solid @corTextPrincipal;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                padding: 16px;
+            }
+            .btn{
+                width: 180px;
+                margin-bottom: 16px;
+                display: flex;
+                justify-content: space-between;
+            }
+            span{
+                background-color: @corBotao;
+                color: @corFonte;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                &:first-child{
+                    background-color: @botao;
+                }
+            
+            }
+            .sobre{
+                color:#f1b206;
+                height:200px;
+                overflow-y: auto;
+                padding: 16px;
+                font-family: @styleFonteText;
+             
+            }
+        }
+}
+
+
+.dark-mode {
+    background-color:@modoDark;
+    color:@corFonte;
+  }
